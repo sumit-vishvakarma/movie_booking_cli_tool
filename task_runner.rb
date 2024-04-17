@@ -1,5 +1,6 @@
 require 'pry'
 require_relative 'movie_initializer'
+require_relative 'services/status_display'
 
 class MovieBookingCLI
   def initialize(movies)
@@ -45,8 +46,7 @@ class MovieBookingCLI
   end
 
   def display_status
-    puts "Current Movies and Showtimes:"
-    @movies.each { |movie| puts movie }
+    StatusDisplay.display_status(@movies)
   end
 
   def exit_program
