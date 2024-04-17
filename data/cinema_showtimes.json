@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Operation Wildcat",
+    "genre": "Action",
+    "shows": [
+      ["1:00 PM", 200],
+      ["4:00 PM", 200]
+    ]
+  },
+  {
+    "title": "Mystic Quest",
+    "genre": "Fantasy",
+    "shows": [
+      ["6:00 PM", 200],
+      ["9:00 PM", 200]
+    ]
+  },
+  {
+    "title": "The Chronicles of Kathiawad",
+    "genre": "Biographical",
+    "shows": [
+      ["2:00 PM", 150],
+      ["5:00 PM", 150]
+    ]
+  },
+  {
+    "title": "Revolutionary Rise",
+    "genre": "Epic",
+    "shows": [
+      ["7:00 PM", 250],
+      ["10:00 PM", 250]
+    ]
+  },
+  {
+    "title": "Gold Rush: Chapter 2",
+    "genre": "Action",
+    "shows": [
+      ["12:00 PM", 200],
+      ["3:00 PM", 200]
+    ]
+  },
+  {
+    "title": "Laughing Clown",
+    "genre": "Drama",
+    "shows": [
+      ["1:30 PM", 150],
+      ["4:30 PM", 150]
+    ]
+  },
+  {
+    "title": "Dreamscape",
+    "genre": "Sci-Fi",
+    "shows": [
+      ["6:30 PM", 200],
+      ["9:30 PM", 200]
+    ]
+  },
+  {
+    "title": "Heroes Unleashed",
+    "genre": "Superhero",
+    "shows": [
+      ["3:30 PM", 250],
+      ["7:00 PM", 250]
+    ]
+  },
+  {
+    "title": "The Syndicate",
+    "genre": "Crime",
+    "shows": [
+      ["2:00 PM", 100],
+      ["5:00 PM", 100]
+    ]
+  },
+  {
+    "title": "Stars Beyond",
+    "genre": "Sci-Fi",
+    "shows": [
+      ["8:00 PM", 200],
+      ["11:00 PM", 200]
+    ]
+  }
+]
