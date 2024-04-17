@@ -20,7 +20,7 @@ A Ruby-based console application for booking movie tickets. Users can book ticke
 
 2. Navigate to the project directory.
 3. Run the application:
-  ```task_runner.rb```
+  ```ruby task_runner.rb```
 
 4. Follow the console prompts to interact with the booking system.
 
