@@ -2,6 +2,7 @@ require 'pry'
 require_relative 'movie_initializer'
 require_relative 'services/movie_ticket_booking'
 require_relative 'services/status_display'
+require_relative 'services/ticket_cancellation'
 
 class MovieBookingCLI
   def initialize(movies)
@@ -43,7 +44,7 @@ class MovieBookingCLI
 
   def cancel_ticket
     details = request_cancellation_details
-    puts "Cancellation details received: #{details}"
+    TicketCancellation.cancel_ticket(@movies, details[:title], details[:show_time], details[:number_of_seats])
   end
 
   def display_status
@@ -65,8 +66,8 @@ class MovieBookingCLI
   def request_cancellation_details
     title = get_user_input("Enter movie title: ", String)
     show_time = get_user_input("Enter show time: ", String)
-    seat_number = get_user_input("Enter seat number to cancel: ", Integer)
-    { title: title, show_time: show_time, seat_number: seat_number }
+    number_of_seats = get_user_input("Enter seat number to cancel: ", Integer)
+    { title: title, show_time: show_time, number_of_seats: number_of_seats }
   end
 
   def get_user_input(prompt, type)
