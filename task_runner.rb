@@ -1,5 +1,6 @@
 require 'pry'
 require_relative 'movie_initializer'
+require_relative 'services/movie_ticket_booking'
 require_relative 'services/status_display'
 
 class MovieBookingCLI
@@ -37,7 +38,7 @@ class MovieBookingCLI
 
   def book_ticket
     details = request_booking_details
-    puts "Booking details received: #{details}"
+    MovieTicketBooking.book_ticket(@movies, details[:title], details[:show_time], details[:num_of_tickets])
   end
 
   def cancel_ticket
